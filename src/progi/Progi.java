@@ -1,19 +1,22 @@
-
 package progi;
 
 public class Progi {
-    static String[] pakli = [20];
-    static String[] jelek = [10];
+
+    static String[] pakli = [21];
+    static String[] jelek = {"Makk", "Tök", "Ász", "Piross"};
+    static String[] szamok = {"VIII", "IX", "X", "Király", "Ász", "Felső"};
+
     public static void main(String[] args) {
+
         Feltolt();
         for (int i = 0; i < 3; i++) {
             Kirak();
             int oszlop = Melyik();
             Kever(oszlop);
         }
-        
+
         ezVolt();
-            
+
     }
 
     private static void ezVolt() {
@@ -21,20 +24,34 @@ public class Progi {
     }
 
     private static void Feltolt() {
-    
+        for (int j = 0; j < pakli.length;) {
+
+            for (String jel : jelek) {
+                for (int i = 0; i < szamok.length; i++) {
+                    pakli[i] = jel + szamok[i];
+                    j++;
+                }
+            }
+        }
+
     }
 
     private static void Kirak() {
-   
+        for (int i = 0; i < pakli.length; i++) {
+            System.out.print(pakli[i]);
+            if ((i+1)%3==0) {
+                System.out.println("");
+            }
+        }
     }
 
     private static void Kever(int oszlop) {
-    
+
     }
 
     private static int Melyik() {
         int ezvolt = 0;
         return ezvolt;
     }
-    
+
 }
