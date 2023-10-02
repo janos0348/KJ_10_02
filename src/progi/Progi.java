@@ -1,20 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package progi;
 
-/**
- *
- * @author katona.janos
- */
 public class Progi {
-
-    /**
-     * @param args the command line arguments
-     */
+    static String[] pakli = [20];
+    static String[] jelek = [10];
     public static void main(String[] args) {
-        // TODO code application logic here
+        Feltolt();
+        for (int i = 0; i < 3; i++) {
+            Kirak();
+            int oszlop = Melyik();
+            Kever(oszlop);
+        }
+        
+        ezVolt();
+            
+    }
+
+    private static void ezVolt() {
+        System.out.println("Erre a kártyára gondol:" /*+ pakli[]*/);
+    }
+
+    private static void Feltolt() {
+    
+    }
+
+    private static void Kirak() {
+   
+    }
+
+    private static void Kever(int oszlop) {
+    
+    }
+
+    private static int Melyik() {
+        int ezvolt = 0;
+        return ezvolt;
     }
     
 }
