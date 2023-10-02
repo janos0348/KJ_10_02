@@ -1,11 +1,13 @@
 package progi;
 
+import java.util.Scanner;
+
 public class Progi {
 
     static String[] pakli = [21];
     static String[] jelek = {"Makk", "Tök", "Ász", "Piross"};
     static String[] szamok = {"VIII", "IX", "X", "Király", "Ász", "Felső"};
-
+    
     public static void main(String[] args) {
 
         Feltolt();
@@ -46,12 +48,20 @@ public class Progi {
     }
 
     private static void Kever(int oszlop) {
-
+        switch (oszlop) {
+            case 1:
+                
+            case 2:
+                
+            case 3:
+                
+        }
     }
 
     private static int Melyik() {
-        int ezvolt = 0;
-        return ezvolt;
+        Scanner beolv = new Scanner();
+        int melyik;
+        return melyik;
     }
 
 }
